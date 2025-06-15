@@ -15,14 +15,14 @@ header {
 }
 
 .logo {
-  width: 500px;
+  width: 300px;
   border-radius: 12px;
 }
 
 .banner {
   clip-path: circle(35%);
   width: 100%;
-  max-width: 500px;
+  max-width: 300px;
   display: block;
   margin: auto;
   transition: .3s;
