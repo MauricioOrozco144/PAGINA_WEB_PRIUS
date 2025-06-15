@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('imagen/ambulancia_prius4.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #0d47a1;
+}
+
+/* Encabezado */
+header {
+  background: linear-gradient(90deg, white, #1976d2);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.logo {
+  width: 500px;
+  border-radius: 12px;
+}
+
+.banner {
+  clip-path: circle(35%);
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: auto;
+  transition: .3s;
+}
+
+.banner:hover {
+  clip-path: circle(45%);
+  transform: scale(1.05);
+}
+
+/* Navegación */
+nav {
+  text-align: center;
+  padding: 10px;
+}
+
+.nav-enlace {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 15px;
+  background: #eeeeee;
+  color: #0d47a1;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-enlace:hover {
+  background: rosybrown;
+}
+
+/* Secciones */
+section {
+  padding: 2rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 1rem;
+  border-radius: 12px;
+}
+
+/* Servicios */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-card {
+  background: #3835e4;
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+.service-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Video */
+.video-container {
+  max-width: 90%;
+  margin: auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  padding: 10px;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #005fa3;
+}
+
+/* Footer */
+footer {
+  background: #4670af;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner {
+    width: 90%;
+  }
+
+  section {
+    margin: 1rem 0.5rem;
+  }
+}
+
